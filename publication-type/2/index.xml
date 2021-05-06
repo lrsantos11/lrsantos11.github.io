@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 | Luiz-Rafael Santos</title>
+    <link>https://lrsantos11.github.io/publication-type/2/</link>
+      <atom:link href="https://lrsantos11.github.io/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
+    <description>2</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://lrsantos11.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>2</title>
+      <link>https://lrsantos11.github.io/publication-type/2/</link>
+    </image>
+    
+    <item>
+      <title>On the Circumcentered-Reflection Method for the Convex Feasibility Problem</title>
+      <link>https://lrsantos11.github.io/publication/behling-2020/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://lrsantos11.github.io/publication/behling-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Block-Wise Circumcentered– Reflection Method</title>
+      <link>https://lrsantos11.github.io/publication/behling-2020-b/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://lrsantos11.github.io/publication/behling-2020-b/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Circumcentering the Douglas–Rachford Method</title>
+      <link>https://lrsantos11.github.io/publication/behling-2018-a/</link>
+      <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://lrsantos11.github.io/publication/behling-2018-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the Linear Convergence of the Circumcentered-Reflection Method</title>
+      <link>https://lrsantos11.github.io/publication/behling-2018/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>https://lrsantos11.github.io/publication/behling-2018/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

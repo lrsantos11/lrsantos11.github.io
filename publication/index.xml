@@ -1,34 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications | Academic site from Prof. Luiz-Rafael Santos</title>
+    <title>Publications | Luiz-Rafael Santos</title>
     <link>https://lrsantos11.github.io/publication/</link>
       <atom:link href="https://lrsantos11.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jul 2013 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://lrsantos11.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://lrsantos11.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>Publications</title>
       <link>https://lrsantos11.github.io/publication/</link>
     </image>
     
     <item>
-      <title>An example conference paper</title>
-      <link>https://lrsantos11.github.io/publication/example/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://lrsantos11.github.io/publication/example/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <title>The Circumcentered-Reflection Method Achieves Better Rates than Alternating Projections</title>
+      <link>https://lrsantos11.github.io/publication/arefidamghani-2020/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://lrsantos11.github.io/publication/arefidamghani-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the Circumcentered-Reflection Method for the Convex Feasibility Problem</title>
+      <link>https://lrsantos11.github.io/publication/behling-2020/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://lrsantos11.github.io/publication/behling-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Block-Wise Circumcentered– Reflection Method</title>
+      <link>https://lrsantos11.github.io/publication/behling-2020-b/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://lrsantos11.github.io/publication/behling-2020-b/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Circumcentering the Douglas–Rachford Method</title>
+      <link>https://lrsantos11.github.io/publication/behling-2018-a/</link>
+      <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://lrsantos11.github.io/publication/behling-2018-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the Linear Convergence of the Circumcentered-Reflection Method</title>
+      <link>https://lrsantos11.github.io/publication/behling-2018/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>https://lrsantos11.github.io/publication/behling-2018/</guid>
+      <description></description>
     </item>
     
   </channel>
