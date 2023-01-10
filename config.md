@@ -1,7 +1,7 @@
 +++
-author = "Nelson Bighetti"
-shortauthor = "N. Bighetti"
-jobtitle = "Head of Research"
+author = "Luiz-Rafael Santos"
+shortauthor = "L.-R. Santos"
+jobtitle = "Assistant Professor"
 
 mintoclevel = 2
 ignore = ["node_modules/", "franklin", "franklin.pub"]
@@ -18,9 +18,9 @@ hasmermaid = false
 # - `"post"`: posts/name-of-post.md
 dateformat = "yearmonth"
 # RSS setup
-website_title = "Franklin Template"
-website_descr = "Example website using Franklin"
-website_url   = "https://tlienart.github.io/FranklinTemplates.jl/"
+website_title = "Academic webpage of Luiz-Rafael Santos"
+website_descr = "Academic webpage of Luiz-Rafael Santos"
+website_url   = "https://lrsantos11.github.io/"
 +++
 
 \newcommand{\callout}[1]{~~~<div class="alert alert-note"><div>~~~#1~~~</div></div>~~~}

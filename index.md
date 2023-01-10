@@ -1,5 +1,7 @@
 @def title = "Academic template"
 
+
+
 <!-- -----------------
      BIOGRAPHY SECTION
      ----------------- -->
@@ -9,35 +11,35 @@
 <!-- LEFT COLUMN -->
 @@col-12,col-lg-4,profile
 
-\img{"/assets/img/person.jpg", class="avatar avatar-circle", alt="Nelson Bighetti"}
+\img{"/assets/img/2020_05_06_EU.jpeg", class="avatar avatar-circle", alt="Luiz-Rafael Santos"}
 \portrait{
-  name="Nelson Bighetti",
-  job="Professor of Artificial Intelligence",
-  link="https://www.stanford.edu/",
-  linkname="Stanford University",
-  twitter="https://twitter.com/GeorgeCushen",
-  gscholar="https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ",
-  github="https://github.com/gcushen",
-  linkedin="https://www.linkedin.com/"
+  name="Luiz-Rafael Santos",
+  job="Professor of Applied Mathematics and Optimization",
+  link="https://mat.blumenau.ufsc.br/",
+  linkname="Universidade Federal de Santa Catarina",
+  twitter="https://twitter.com/lrsantos11",
+  gscholar="https://scholar.google.com/citations?user=lrsantos11",
+  github="https://github.com/lrsantos11",
+  linkedin="https://www.linkedin.com/in/lrsantos11", 
+  lattes="http://lattes.cnpq.br/8148144650071227"
 }
 @@ <!-- end of column -->
 
 <!-- RIGHT COLUMN -->
 @@col-12,col-lg-8
 
-\begin{biography}{resume="/assets/demo_resume.pdf"}
-  Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops
-  self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+\begin{biography}{resume="/assets/CV_LRS.pdf"}
+I'm Professor of Applied Mathematics and Optimization, at [Departmento de Matemática](https://mat.blumenau.ufsc.br) of [UFSC — Federal University of Santa Catarina](https://ufsc.br) — [Campus Blumenau](https://blumenau.ufsc.br). My research interests include analysis and implementation of continous optimization algorithms, convex optimization, algorithms for data science and machine learning and numerical analysis. I'm also  the [Laboratory of Applied Mathematics — LABMAC](http://labmac.mat.blumenau.ufsc.br), which develops open-source research solvers and algorithms in applied mathematics.
 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+In the first semester of 2023 I'm as a Visiting Assistant Professor at Department of [Managment Sciences and Engineering](https://msande.stanford.edu) of [Stanford University](https://stanford.edu). 
 \end{biography}
 
 \shortcv{
-  interests=["Artificial Intelligence", "Computational Linguistics", "Information Retrieval"],
+  interests=["Optimization", "Machine Learning Algorithms", "Operations Research", "Numerical Linear Algebra"],
   education=[
-    ("PhD in Artificial Intelligence, 2012", "Stanford University"),
-    ("MEng in Artificial Intelligence, 2009", "Massachusetts Institute of Technology"),
-    ("BSc in Artificial Intelligence, 2008", "Massachusetts Institute of Technology")]
+    ("PhD in Applied Mathematics, 2014", "Unicamp"),
+    ("MSc in Applied Mathematics, 2008", "Unicamp"),
+    ("BSc in Mathematics, 2014", "FURB")]
 }
 
 @@ <!-- end of column -->
@@ -47,15 +49,15 @@
      SKILLS SECTION
      -------------- -->
 
-\begin{section}{name="skills", class="wg-featurette", rowclass="featurette"}
+<!-- \begin{section}{name="skills", class="wg-featurette", rowclass="featurette"} -->
 
-\sectionheading{"Skills", class="col-md-12"}
+<!-- \sectionheading{"Skills", class="col-md-12"} -->
 
-\skill{"Julia", "90%", img="/assets/img/julia-dots.svg"}
-\skill{"Machine Learning", "100%", fa="chart-line"}
-\skill{"Photography", "10%", fa="camera-retro"}
+<!-- \skill{"Julia", "90%", img="/assets/img/julia-dots.svg"} -->
+<!-- \skill{"Machine Learning", "100%", fa="chart-line"} -->
+<!-- \skill{"Photography", "10%", fa="camera-retro"} -->
 
-\end{section}
+<!-- \end{section} -->
 
 
 <!-- ------------------
@@ -69,69 +71,17 @@
 @@col-12,col-lg-8
 
 \experience{
-  title="CEO",
-  company="GenCoin",
-  descr="""
-    Responsibilities include:
-    * Analysing
-    * Modelling
-    * Deploying
-    """,
-  from="Jan 2017",
+  title="Professor of Applied Mathematics and Optimization",
+  company="Universidade Federal de Santa Catarina",
+  from="Sep 2014",
   to="Present",
-  location="California",
+  location="Blumenau, SC, Brasil",
   active=true
   }
-\experience{
-  title="Professor",
-  company="University X",
-  from="Jan 2016",
-  to="Dec 2016",
-  last=true,
-  location="California",
-  descr="Taught electronic engineering and researched semiconductor physics."
-  }
-
 @@
 
 \end{section}
 
-<!-- -----------------------
-     ACCOMPLISHMENTS SECTION
-     ----------------------- -->
-
-\begin{section}{name="accomplishments"}
-
-\sectionheading{"Accomplish­ments", class="col-12 col-lg-4"}
-
-@@col-12,col-lg-8
-
-\certificate{
-  title="Neural Networks and Deep Learning",
-  meta="Coursera",
-  metalink="https://www.coursera.org",
-  date="Oct 2018",
-  certlink="https://www.coursera.org"
-  }
-\certificate{
-  title="Blockchain Fundamentals",
-  descr="Formulated informed **blockchain** models, hypotheses, and use cases.",
-  meta="Coursera",
-  metalink="https://www.edx.org",
-  date="Mar 2018",
-  certlink="https://www.edx.org"
-  }
-\certificate{
-  title="Object-Oriented Programming in R: S3 and R6 Course",
-  meta="DataCamp",
-  metalink="https://www.datacamp.com",
-  date="Jul 2017 – Dec 2017",
-  certlink="https://www.datacamp.com"
-}
-
-@@
-
-\end{section}
 
 <!-- --------------------
      RECENT POSTS SECTION

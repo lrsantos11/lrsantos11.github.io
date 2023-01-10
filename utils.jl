@@ -30,7 +30,7 @@ end
 
 # Portrait block with a few optional fields: name, job title, social buttons
 @lx function portrait(; name="", job="", link="", linkname="",
-                     twitter="", gscholar="", github="", linkedin="")
+                     twitter="", gscholar="", github="", linkedin="", lattes="")
     io = IOBuffer()
     write(io, html("<div class=portrait-title>"))
     isempty(name) || write(io, html("<h2>$name</h2>"))
@@ -42,12 +42,13 @@ end
             write(io, html("""<h3><a href="$link" target=_blank rel=noopener><span>$linkname</span></a></h3>"""))
         end
     end
-    if !all(isempty, (twitter, gscholar, github, linkedin))
+    if !all(isempty, (twitter, gscholar, github, linkedin, lattes))
         write(io, html("<ul class=network-icon aria-hidden=true>"))
         isempty(twitter) || write(io, html("""<li><a href="$twitter" target=_blank rel=noopener><i class="fab fa-twitter big-icon"></i></a></li>"""))
         isempty(gscholar) || write(io, html("""<li><a href="$gscholar" target=_blank rel=noopener><i class="fas fa-graduation-cap big-icon"></i></a></li>"""))
         isempty(github) || write(io, html("""<li><a href="$github" target=_blank rel=noopener><i class="fab fa-github big-icon"></i></a></li>"""))
         isempty(linkedin) || write(io, html("""<li><a href="$linkedin" target=_blank rel=noopener><i class="fab fa-linkedin big-icon"></i></a></li>"""))
+        isempty(lattes) || write(io, html("""<li><a href="$lattes" target=_blank rel=noopener><i class="ai ai-lattes big-icon"></i></a></li>"""))        
         write(io, html("</ul>"))
     end
     write(io, html("</div>"))
