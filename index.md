@@ -28,7 +28,7 @@
 <!-- RIGHT COLUMN -->
 @@col-12,col-lg-8
 
-\begin{biography}{resume="/assets/CV_LRS.pdf"}
+\begin{biography}{resume="/assets/CV_LRS.pdf", lattes="http://lattes.cnpq.br/8148144650071227"}
 I'm Professor of Applied Mathematics and Optimization, at [Departmento de Matemática](https://mat.blumenau.ufsc.br) of [UFSC — Federal University of Santa Catarina](https://ufsc.br) — [Campus Blumenau](https://blumenau.ufsc.br). My research interests include analysis and implementation of continous optimization algorithms, convex optimization, algorithms for data science and machine learning and numerical analysis. I'm also  the [Laboratory of Applied Mathematics — LABMAC](http://labmac.mat.blumenau.ufsc.br), which develops open-source research solvers and algorithms in applied mathematics.
 
 In the first semester of 2023 I'm as a Visiting Assistant Professor at Department of [Managment Sciences and Engineering](https://msande.stanford.edu) of [Stanford University](https://stanford.edu). 
@@ -69,7 +69,14 @@ In the first semester of 2023 I'm as a Visiting Assistant Professor at Departmen
 \sectionheading{"Experience", class="col-12 col-lg-4"}
 
 @@col-12,col-lg-8
-
+\experience{
+  title="Visiting Assistant Professor",
+  company="Stanford University",
+  from="Jan 2023",
+  to="Present",
+  location="Stanford, CA, US",
+  active=true
+  }
 \experience{
   title="Professor of Applied Mathematics and Optimization",
   company="Universidade Federal de Santa Catarina",
@@ -77,6 +84,14 @@ In the first semester of 2023 I'm as a Visiting Assistant Professor at Departmen
   to="Present",
   location="Blumenau, SC, Brasil",
   active=true
+  }
+  \experience{
+  title="PhD Candidate in Applied Mathematics",
+  company="Universidade Estadual de Campinas",
+  from="Mar 2009",
+  to="Jul 2014",
+  location="Campinas, SP, Brasil",
+  active=false
   }
 @@
 
@@ -87,17 +102,7 @@ In the first semester of 2023 I'm as a Visiting Assistant Professor at Departmen
      RECENT POSTS SECTION
      -------------------- -->
 
-\begin{section}{name="posts", class="wg-pages"}
 
-\sectionheading{"Recent Posts", class="col-12 col-lg-4"}
-
-@@col-12,col-lg-8
-
-{{recentposts 3}}
-
-@@
-
-\end{section}
 
 <!-- -----------------
      PORTFOLIO SECTION XXX

@@ -56,11 +56,13 @@ end
 end
 
 # Biography block with optional resume link
-@env function biography(md; resume="")
+@env function biography(md; resume="", lattes="")
     io = IOBuffer()
     write(io, html("""<h1>Biography</h1>""") * md)
     isempty(resume) || write(io, html("""
-        </br><p><i class="fas fa-download pr-1 fa-fw"></i>Download my <a href="$resume" target=_blank>resumé</a>.</p>"""))
+        </br><p><i class="fas fa-download pr-1 fa-fw"></i>Download my <a href="$resume" target=_blank>resumé</a> (in English).</p>"""))
+      isempty(lattes) || write(io, html("""
+        <p><i class="ai ai-lattes pr-1 fa-fw"></i><a href="$lattes" target=_blank>Check here</a> my CV Lattes (in Portuguese).</p>"""))
     return String(take!(io))
 end
 
