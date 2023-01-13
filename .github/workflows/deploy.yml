@@ -27,8 +27,7 @@ jobs:
     - name: Setup pandoc
       uses: r-lib/actions/setup-pandoc@v2
       with:
-        pandoc-version: '2.17.1' # The pandoc version to download (if necessary) and use.
-    - run: echo "# Test" | pandoc -t html
+        pandoc-version: '2.19' # The pandoc version to download (if necessary) and use.
     - run: echo "# Test" | pandoc -t html
     - name: Install Julia
       uses: julia-actions/setup-julia@v1
