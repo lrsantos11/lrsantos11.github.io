@@ -7,10 +7,11 @@ permissions:
   contents: write
 jobs:
   build-and-deploy:
+    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         persist-credentials: false
     - name: Install SSH Client
@@ -24,10 +25,10 @@ jobs:
         python-version: '3.8'
     - run: pip install matplotlib # if you use PyPlot this is needed
     - name: Setup pandoc
-      uses: actions/checkout@v3
       uses: r-lib/actions/setup-pandoc@v2
-        with:
-        pandoc-version: '2.19.2' # The pandoc version to download (if necessary) and use.
+      with:
+        pandoc-version: '2.17.1' # The pandoc version to download (if necessary) and use.
+    - run: echo "# Test" | pandoc -t html
     - run: echo "# Test" | pandoc -t html
     - name: Install Julia
       uses: julia-actions/setup-julia@v1
