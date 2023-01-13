@@ -6,7 +6,7 @@ jobtitle = "Assistant Professor"
 mintoclevel = 2
 ignore = ["node_modules/", "franklin", "franklin.pub"]
 
-prepath = "lrsantos11.github.io"
+prepath = ""
 
 hasplotly = false
 hasmermaid = false
