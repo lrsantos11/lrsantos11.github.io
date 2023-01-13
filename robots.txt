@@ -1,0 +1,4 @@
+Sitemap: https://lrsantos11.github.io/sitemap.xml
+
+User-agent: *
+Disallow:
