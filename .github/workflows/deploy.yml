@@ -21,6 +21,12 @@ jobs:
       with:
         python-version: '3.8'
     - run: pip install matplotlib # if you use PyPlot this is needed
+    - name: Setup pandoc
+      uses: actions/checkout@v3
+      uses: r-lib/actions/setup-pandoc@v2
+        with:
+        pandoc-version: '2.19.2' # The pandoc version to download (if necessary) and use.
+    - run: echo "# Test" | pandoc -t html
     - name: Install Julia
       uses: julia-actions/setup-julia@v1
       with:
