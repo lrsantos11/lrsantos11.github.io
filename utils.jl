@@ -1,4 +1,5 @@
 using FranklinUtils
+using Dates
 # ----------------------------------- #
 # Academic blocks // General elements #
 # ----------------------------------- #
@@ -319,3 +320,5 @@ function hfun_pub(type_bib)
           )  
         String(take!(io)) 
 end
+
+today_for_page = Dates.format(today(),"u, dd YYYY")
