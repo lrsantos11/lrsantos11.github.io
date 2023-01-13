@@ -1,4 +1,4 @@
-@def title = "Academic template"
+@def title = "Academic page of LRS"
 
 
 
@@ -21,14 +21,15 @@
   gscholar="https://scholar.google.com/citations?user=lrsantos11",
   github="https://github.com/lrsantos11",
   linkedin="https://www.linkedin.com/in/lrsantos11", 
-  lattes="http://lattes.cnpq.br/8148144650071227"
+  lattes="http://lattes.cnpq.br/8148144650071227",
+  orcid ="https://orcid.org/0000-0002-0083-5871"
 }
 @@ <!-- end of column -->
 
 <!-- RIGHT COLUMN -->
 @@col-12,col-lg-8
 
-\begin{biography}{resume="/assets/CV_LRS.pdf", lattes="http://lattes.cnpq.br/8148144650071227"}
+\begin{biography}{resume="https://drive.google.com/file/d/1MaOvBi_vE436K8LYqYpvfq-HIVEs-WNx/view?usp=sharing", lattes="http://lattes.cnpq.br/8148144650071227"}
 I'm Professor of Applied Mathematics and Optimization, at [Departmento de Matemática](https://mat.blumenau.ufsc.br) of [UFSC — Federal University of Santa Catarina](https://ufsc.br) — [Campus Blumenau](https://blumenau.ufsc.br). My research interests include analysis and implementation of continous optimization algorithms, convex optimization, algorithms for data science and machine learning and numerical analysis. I'm also  the [Laboratory of Applied Mathematics — LABMAC](http://labmac.mat.blumenau.ufsc.br), which develops open-source research solvers and algorithms in applied mathematics.
 
 In the first semester of 2023 I'm as a Visiting Assistant Professor at Department of [Managment Sciences and Engineering](https://msande.stanford.edu) of [Stanford University](https://stanford.edu). 

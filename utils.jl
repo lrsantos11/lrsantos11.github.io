@@ -1,5 +1,4 @@
 using FranklinUtils
-
 # ----------------------------------- #
 # Academic blocks // General elements #
 # ----------------------------------- #
@@ -14,7 +13,7 @@ using FranklinUtils
           </div>
         </section>""")
 end
-
+ 
 @lx function sectionheading(title; class="")
     return html("""
         <div class="$class section-heading"><h1>$title</h1></div>
@@ -30,7 +29,7 @@ end
 
 # Portrait block with a few optional fields: name, job title, social buttons
 @lx function portrait(; name="", job="", link="", linkname="",
-                     twitter="", gscholar="", github="", linkedin="", lattes="")
+                     twitter="", gscholar="", github="", linkedin="", lattes="", orcid="")
     io = IOBuffer()
     write(io, html("<div class=portrait-title>"))
     isempty(name) || write(io, html("<h2>$name</h2>"))
@@ -42,13 +41,14 @@ end
             write(io, html("""<h3><a href="$link" target=_blank rel=noopener><span>$linkname</span></a></h3>"""))
         end
     end
-    if !all(isempty, (twitter, gscholar, github, linkedin, lattes))
+    if !all(isempty, (twitter, gscholar, github, linkedin, lattes, orcid))
         write(io, html("<ul class=network-icon aria-hidden=true>"))
         isempty(twitter) || write(io, html("""<li><a href="$twitter" target=_blank rel=noopener><i class="fab fa-twitter big-icon"></i></a></li>"""))
         isempty(gscholar) || write(io, html("""<li><a href="$gscholar" target=_blank rel=noopener><i class="fas fa-graduation-cap big-icon"></i></a></li>"""))
         isempty(github) || write(io, html("""<li><a href="$github" target=_blank rel=noopener><i class="fab fa-github big-icon"></i></a></li>"""))
         isempty(linkedin) || write(io, html("""<li><a href="$linkedin" target=_blank rel=noopener><i class="fab fa-linkedin big-icon"></i></a></li>"""))
-        isempty(lattes) || write(io, html("""<li><a href="$lattes" target=_blank rel=noopener><i class="ai ai-lattes big-icon"></i></a></li>"""))        
+        isempty(lattes) || write(io, html("""<li><a href="$lattes" target=_blank rel=noopener><i class="ai ai-lattes big-icon"></i></a></li>"""))
+        isempty(orcid) || write(io, html("""<li><a href="$orcid" target=_blank rel=noopener><i class="ai ai-orcid big-icon"></i></a></li>"""))        
         write(io, html("</ul>"))
     end
     write(io, html("</div>"))
@@ -306,4 +306,16 @@ end
 function env_mermaid(e, _)
     content = Franklin.content(e)
     return "@@mermaid ~~~$content~~~@@"
+end
+
+function hfun_pub(type_bib)
+  io = IOBuffer()
+  bib_html = read(`pandoc --citeproc  --csl=_assets/apa-numeric-superscript.csl --bibliography=_assets/my_refs.bib   --mathjax -f markdown+yaml_metadata_block+citations+raw_html  _assets/$(type_bib).md`, String)
+  write(io, """
+          <font size="2">
+          $(bib_html)
+          </font>
+          """
+          )  
+        String(take!(io)) 
 end
