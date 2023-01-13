@@ -1,5 +1,7 @@
 @def title = "Publications"
 
+\toc
+
 ### Papers on the pipeline
 {{pub "ref_pipeline"}}
 ### Peer reviewed journal articles

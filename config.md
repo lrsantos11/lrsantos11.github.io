@@ -6,7 +6,7 @@ jobtitle = "Assistant Professor"
 mintoclevel = 2
 ignore = ["node_modules/", "franklin", "franklin.pub"]
 
-prepath = "ft-academic-resume"
+prepath = "lrsantos11.github.io"
 
 hasplotly = false
 hasmermaid = false
