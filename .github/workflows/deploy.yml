@@ -16,13 +16,14 @@ jobs:
         persist-credentials: false
     - name: Install SSH Client
       continue-on-error: true
-      uses: webfactory/ssh-agent@v0.2.0
+      uses: webfactory/ssh-agent@v0.7.0
       with:
-        ssh-private-key: ${{ secrets.FRANKLIN_PRIV }}
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+                         ${{ secrets.FRANKLIN_PRIV }}
     - name: Install python
-      uses: actions/setup-python@v1
+      uses: actions/setup-python@v4
       with:
-        python-version: '3.8'
+        python-version: '3.10'
     - run: pip install matplotlib # if you use PyPlot this is needed
     - name: Setup pandoc
       uses: r-lib/actions/setup-pandoc@v2
