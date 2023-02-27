@@ -317,7 +317,7 @@ function hfun_pub(type_bib)
           $(bib_html)
           </font>
           """
-          )  
+          )
         String(take!(io)) 
 end
 
