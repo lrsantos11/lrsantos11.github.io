@@ -30,7 +30,7 @@
 @@col-12,col-lg-8
 
 \begin{biography}{resume="https://drive.google.com/file/d/1MaOvBi_vE436K8LYqYpvfq-HIVEs-WNx/view?usp=sharing", lattes="http://lattes.cnpq.br/8148144650071227"}
-Luiz-Rafael Santos is a Professor of Applied Mathematics and Optimization, at [UFSC — Federal University of Santa Catarina](https://ufsc.br) — [Campus Blumenau](https://blumenau.ufsc.br) on the [Mathematics Department](https://mat.blumenau.ufsc.br). His research interests include analysis and implementation of continous optimization algorithms, convex optimization, algorithms for data science and machine learning and numerical analysis. He is also member of the [Laboratory of Computational and Applied Mathematics — LABMAC](http://labmac.mat.blumenau.ufsc.br), which develops open-source research solvers and algorithms in applied mathematics.
+Luiz-Rafael Santos is a Professor of Applied Mathematics and Optimization, at [UFSC — Federal University of Santa Catarina](https://ufsc.br) — [Campus Blumenau](https://blumenau.ufsc.br) on the [Departamento de Matemática](https://mat.blumenau.ufsc.br). His research interests include analysis and implementation of continous optimization algorithms, convex optimization, algorithms for data science and machine learning and numerical analysis. He is also member of the [Laboratory of Computational and Applied Mathematics — LABMAC](http://labmac.mat.blumenau.ufsc.br), which develops open-source research solvers and algorithms in applied mathematics.
 
 In the first semester of 2023 Prof. Santos stands as Visiting Assistant Professor of [Management Sciences and Engineering](https://msande.stanford.edu) at [Stanford University](https://stanford.edu), being host by [Prof. Madeleine Udell](https://web.stanford.edu/~udell).
 \end{biography}
