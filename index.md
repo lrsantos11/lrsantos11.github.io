@@ -71,7 +71,7 @@ In the first semester of 2023 Prof. Santos stands as Visiting Assistant Professo
 
 @@col-12,col-lg-8
 \experience{
-  title="Visiting Assistant Professor",
+  title="Visiting Assistant Professor of Management Sciences and Engineering",
   company="Stanford University",
   from="Jan 2023",
   to="Present",
