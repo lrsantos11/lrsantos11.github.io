@@ -61,9 +61,9 @@ end
     io = IOBuffer()
     write(io, html("""<h1>Biography</h1>""") * md)
     isempty(resume) || write(io, html("""
-        </br><p><i class="fas fa-download pr-1 fa-fw"></i>Download my <a href="$resume" target=_blank>resumé</a> (in English).</p>"""))
+        </br><p><i class="fas fa-download pr-1 fa-fw"></i><a href="$resume" target=_blank>Resumé</a> (in English).</p>"""))
       isempty(lattes) || write(io, html("""
-        <p><i class="ai ai-lattes pr-1 fa-fw"></i><a href="$lattes" target=_blank>Check here</a> my CV Lattes (in Portuguese).</p>"""))
+        <p><i class="ai ai-lattes pr-1 fa-fw"></i><a href="$lattes" target=_blank>CV Lattes</a> (in Portuguese).</p>"""))
     return String(take!(io))
 end
 
