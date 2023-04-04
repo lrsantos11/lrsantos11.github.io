@@ -311,7 +311,7 @@ end
 
 function hfun_pub(type_bib)
   io = IOBuffer()
-  bib_html = read(`pandoc --citeproc  --csl=_assets/apa-numeric-superscript.csl --bibliography=_assets/my_refs.bib   --mathjax -f markdown+yaml_metadata_block+citations+raw_html  _assets/$(type_bib).md`, String)
+  bib_html = read(`pandoc --citeproc  --csl=_assets/apa-cv.csl --bibliography=_assets/my_refs.bib   --mathjax -f markdown+yaml_metadata_block+citations+raw_html  _assets/$(type_bib).md`, String)
   write(io, """
           <font size="2">
           $(bib_html)
