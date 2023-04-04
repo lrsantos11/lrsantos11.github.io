@@ -1642,6 +1642,8 @@
       <key macro="title"/>
     </sort>
     <layout>
+      <!-- Citation Number -->
+      <text variable="citation-number"   suffix=". "/>
       <choose>
         <if type="bill legal_case legislation treaty" match="any">
           <!-- Legal items have different orders and delimiters -->
