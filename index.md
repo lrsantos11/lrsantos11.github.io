@@ -1,4 +1,4 @@
-@def title = "Academic page of LRS"
+@def title = "Academic page of Prof. L.-R. Santos"
 
 
 
@@ -30,10 +30,11 @@
 @@col-12,col-lg-8
 
 \begin{biography}{resume="https://drive.google.com/file/d/1MaOvBi_vE436K8LYqYpvfq-HIVEs-WNx/view?usp=sharing", lattes="http://lattes.cnpq.br/8148144650071227"}
-Luiz-Rafael Santos is a **Professor of Applied Mathematics and Optimization** at the [UFSC — Federal University of Santa Catarina](https://ufsc.br), located in the [Campus Blumenau](https://blumenau.ufsc.br), on the [Departamento de Matemática](https://mat.blumenau.ufsc.br). He is also a member of the [Laboratory of Computational and Applied Mathematics — LABMAC](http://labmac.mat.blumenau.ufsc.br), where he contributes to the development of open-source solvers and algorithms in applied mathematics. 
-Prof. Santos has been appointed as a **Visiting Assistant Professor** of [Management Sciences and Engineering](https://msande.stanford.edu) at [Stanford University](https://stanford.edu) in the _first semester of 2023_, where he is being hosted by [Prof. Madeleine Udell](https://web.stanford.edu/~udell).
+I am **Professor of Applied Mathematics and Optimization** on the [Departamento de Matemática](https://mat.blumenau.ufsc.br) at the [UFSC — Federal University of Santa Catarina](https://ufsc.br), located in [Blumenau](https://blumenau.ufsc.br), SC, Brazil. I am also a member of the [Laboratory of Computational and Applied Mathematics — LABMAC](http://labmac.mat.blumenau.ufsc.br), where we development of open-source solvers and algorithms in applied mathematics. 
 
-Prof. Santos' research interests include _analysis and implementation of continuous and convex optimization algorithms_, _algorithms for data science and machine learning_, and _numerical linear algebra_. 
+On _Spring of 2023_, I have been appointed as a **Visiting Assistant Professor** of [Management Sciences and Engineering](https://msande.stanford.edu) at [Stanford University](https://stanford.edu), where I am being hosted by [Prof. Madeleine Udell](https://web.stanford.edu/~udell).
+
+My research interests include _analysis and implementation of continuous and convex optimization algorithms_, _algorithms for data science and machine learning_, and _numerical linear algebra_. 
 
 
 \end{biography}
@@ -41,9 +42,9 @@ Prof. Santos' research interests include _analysis and implementation of continu
 \shortcv{
   interests=["Optimization", "Machine Learning Algorithms", "Operations Research", "Numerical Linear Algebra"],
   education=[
-    ("PhD in Applied Mathematics, 2014", "Unicamp"),
-    ("MSc in Applied Mathematics, 2008", "Unicamp"),
-    ("BSc in Mathematics, 2014", "FURB")]
+    ("PhD in Applied Mathematics, 2014", "Unicamp, Brazil"),
+    ("MSc in Applied Mathematics, 2008", "Unicamp, Brazil"),
+    ("BSc in Mathematics, 2014", "FURB, Brazil")]
 }
 
 @@ <!-- end of column -->
@@ -53,15 +54,15 @@ Prof. Santos' research interests include _analysis and implementation of continu
      SKILLS SECTION
      -------------- -->
 
-<!-- \begin{section}{name="skills", class="wg-featurette", rowclass="featurette"} -->
+<!-- \begin{section}{name="skills", class="wg-featurette", rowclass="featurette"}
 
-<!-- \sectionheading{"Skills", class="col-md-12"} -->
+\sectionheading{"Skills", class="col-md-12"}
 
-<!-- \skill{"Julia", "90%", img="/assets/img/julia-dots.svg"} -->
-<!-- \skill{"Machine Learning", "100%", fa="chart-line"} -->
-<!-- \skill{"Photography", "10%", fa="camera-retro"} -->
+\skill{"Julia", "100%", img="/assets/img/julia-dots.svg"}
+\skill{"Optimization", "100%", fa="chart-line"}
+\skill{"Photography", "10%", fa="camera-retro"} 
 
-<!-- \end{section} -->
+\end{section} -->
 
 
 <!-- ------------------
@@ -123,3 +124,24 @@ Prof. Santos' research interests include _analysis and implementation of continu
 <!-- ---------------------------
      RECENT PUBLICATIONS SECTION XXX
      --------------------------- -->
+\begin{section}{name="publications"}
+
+\sectionheading{"Publications", class="col-7 col-lg-4"}
+
+@@col-8,col-lg12
+
+
+## Papers on the pipeline
+{{pub "ref_pipeline"}}
+## Peer reviewed articles on academic journals
+{{pub "ref_articles"}}
+
+### Peer reviewed proceedings and book chapters
+{{pub "ref_conf"}}
+
+### Dissertations
+{{pub "ref_theses"}}
+
+@@
+
+\end{section}

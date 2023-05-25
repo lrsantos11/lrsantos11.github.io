@@ -18,8 +18,8 @@ hasmermaid = false
 # - `"post"`: posts/name-of-post.md
 dateformat = "yearmonth"
 # RSS setup
-website_title = "Academic webpage of Luiz-Rafael Santos"
-website_descr = "Academic webpage of Luiz-Rafael Santos"
+website_title = "Academic webpage of Prof. Luiz-Rafael Santos"
+website_descr = "Academic webpage of Prof. Luiz-Rafael Santos"
 website_url   = "https://lrsantos11.github.io/"
 +++
 
