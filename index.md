@@ -30,11 +30,15 @@
 @@col-12,col-lg-8
 
 \begin{biography}{resume="https://drive.google.com/file/d/1MaOvBi_vE436K8LYqYpvfq-HIVEs-WNx/view?usp=sharing", lattes="http://lattes.cnpq.br/8148144650071227"}
-I am **Professor of Applied Mathematics and Optimization** on the [Departamento de Matemática](https://mat.blumenau.ufsc.br) at the [UFSC — Federal University of Santa Catarina](https://ufsc.br), located in [Blumenau](https://blumenau.ufsc.br), SC, Brazil. I am also a member of the [Laboratory of Computational and Applied Mathematics — LABMAC](http://labmac.mat.blumenau.ufsc.br), where we development of open-source solvers and algorithms in applied mathematics. 
+I am **Professor of Applied Mathematics and Optimization** at [Departamento de Matemática](https://mat.blumenau.ufsc.br) of [Federal University of Santa Catarina - UFSC](https://ufsc.br), located in [Blumenau](https://blumenau.ufsc.br), SC, Brazil. I am also a member of the [Laboratory of Computational and Applied Mathematics — LABMAC](http://labmac.mat.blumenau.ufsc.br), where open-source solvers and algorithms in applied mathematics are developed. 
 
-On _Spring of 2023_, I have been appointed as a **Visiting Assistant Professor** of [Management Sciences and Engineering](https://msande.stanford.edu) at [Stanford University](https://stanford.edu), where I am being hosted by [Prof. Madeleine Udell](https://web.stanford.edu/~udell).
+In 2023, I am on a Sabbatical Research Leave. 
 
-My research interests include _analysis and implementation of continuous and convex optimization algorithms_, _algorithms for data science and machine learning_, and _numerical linear algebra_. 
+ - In the first semester, I was appointed **Visiting Assistant Professor** of [Management Sciences and Engineering](https://msande.stanford.edu) at [Stanford University](https://stanford.edu), where I was hosted by [Madeleine Udell](https://web.stanford.edu/~udell). 
+
+ - During the second semester, I was granted with the **[FAPESP Visiting Researcher Award](https://fapesp.br/index.php/en/visiting)** to be a Visiting Professor at [IMECC](https://ime.unicamp.br)/[Universidade Estadual de Campinas — Unicamp](https://unicamp.br), to work with [Mario Martinez](https://ime.unicamp.br/~martinez), [Claudia Sagastizábal](https://ime.unicamp.br/~sagastiz) and [Paulo J. S. Silva](https://ime.unicamp.br/~pjssilva). 
+
+My research interests include _analysis and implementation of convex and nonconvex optimization algorithms_, _algorithms for data science and machine learning_, and _numerical linear algebra_. 
 
 
 \end{biography}
@@ -75,11 +79,11 @@ My research interests include _analysis and implementation of continuous and con
 
 @@col-12,col-lg-8
 \experience{
-  title="Visiting Assistant Professor of Management Sciences and Engineering",
-  company="Stanford University",
-  from="Jan 2023",
+  title="FAPESP Visiting Researcher at IMECC",
+  company="Universidade Estadual de Campinas",
+  from="Ago 2023",
   to="Present",
-  location="Stanford, CA, US",
+  location="Campinas, SP, BR",
   active=true
   }
 \experience{
@@ -87,8 +91,16 @@ My research interests include _analysis and implementation of continuous and con
   company="Universidade Federal de Santa Catarina",
   from="Sep 2014",
   to="Present",
-  location="Blumenau, SC, Brasil",
+  location="Blumenau, SC, BR",
   active=true
+  }
+  \experience{
+  title="Visiting Assistant Professor of Management Sciences and Engineering",
+  company="Stanford University",
+  from="Jan 2023",
+  to="Jul 2023",
+  location="Stanford, CA, US",
+  active=false
   }
   \experience{
   title="PhD Candidate in Applied Mathematics",
