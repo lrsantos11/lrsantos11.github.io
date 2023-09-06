@@ -48,7 +48,7 @@ My research interests include _analysis and implementation of convex and nonconv
   education=[
     ("PhD in Applied Mathematics, 2014", "Unicamp, Brazil"),
     ("MSc in Applied Mathematics, 2008", "Unicamp, Brazil"),
-    ("BSc in Mathematics, 2014", "FURB, Brazil")]
+    ("BSc in Mathematics, 2004", "FURB, Brazil")]
 }
 
 @@ <!-- end of column -->
