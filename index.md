@@ -36,7 +36,7 @@ In 2023, I am on a Sabbatical Research Leave.
 
  - In the first semester, I was appointed **Visiting Assistant Professor** of [Management Sciences and Engineering](https://msande.stanford.edu) at [Stanford University](https://stanford.edu), where I was hosted by [Madeleine Udell](https://web.stanford.edu/~udell). 
 
- - During the second semester, I was granted with the **[FAPESP Visiting Researcher Award](https://fapesp.br/index.php/en/visiting)** to be a Visiting Professor at [IMECC](https://ime.unicamp.br)/[Universidade Estadual de Campinas — Unicamp](https://unicamp.br), to work with [Mario Martinez](https://ime.unicamp.br/~martinez), [Claudia Sagastizábal](https://ime.unicamp.br/~sagastiz) and [Paulo J. S. Silva](https://ime.unicamp.br/~pjssilva). 
+ - During the second semester, I was granted with the **[FAPESP Visiting Researcher Award](https://fapesp.br/index.php/en/visiting)** to be a Visiting Professor at [IMECC](https://ime.unicamp.br)/[Universidade Estadual de Campinas — Unicamp](https://unicamp.br), to work with [Mario Martinez](https://ime.unicamp.br/~martinez), [Claudia Sagastizábal](https://ime.unicamp.br/~sagastiz) and [Paulo J. S. Silva](https://ime.unicamp.br/~pjssilva).
 
 My research interests include _analysis and implementation of convex and nonconvex optimization algorithms_, _algorithms for data science and machine learning_, and _numerical linear algebra_. 
 
