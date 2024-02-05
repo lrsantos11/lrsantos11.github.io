@@ -32,11 +32,12 @@
 \begin{biography}{resume="https://drive.google.com/file/d/1MaOvBi_vE436K8LYqYpvfq-HIVEs-WNx/view?usp=sharing", lattes="http://lattes.cnpq.br/8148144650071227"}
 I am **Professor of Applied Mathematics and Optimization** at [Departamento de Matemática](https://mat.blumenau.ufsc.br) of [Federal University of Santa Catarina - UFSC](https://ufsc.br), located in [Blumenau](https://blumenau.ufsc.br), SC, Brazil. I am also a member of the [Laboratory of Computational and Applied Mathematics — LABMAC](http://labmac.mat.blumenau.ufsc.br), where open-source solvers and algorithms in applied mathematics are developed. 
 
+<!-- 
 In 2023, I am on a Sabbatical Research Leave. 
 
  - In the first semester, I was appointed **Visiting Assistant Professor** of [Management Sciences and Engineering](https://msande.stanford.edu) at [Stanford University](https://stanford.edu), where I was hosted by [Madeleine Udell](https://web.stanford.edu/~udell). 
 
- - During the second semester, I was granted with the **[FAPESP Visiting Researcher Award](https://fapesp.br/index.php/en/visiting)** to be a Visiting Professor at [IMECC](https://ime.unicamp.br)/[Universidade Estadual de Campinas — Unicamp](https://unicamp.br), to work with [Mario Martinez](https://ime.unicamp.br/~martinez), [Claudia Sagastizábal](https://ime.unicamp.br/~sagastiz) and [Paulo J. S. Silva](https://ime.unicamp.br/~pjssilva).
+ - During the second semester, I was granted with the **[FAPESP Visiting Researcher Award](https://fapesp.br/index.php/en/visiting)** to be a Visiting Professor at [IMECC](https://ime.unicamp.br)/[Universidade Estadual de Campinas — Unicamp](https://unicamp.br), to work with [Mario Martinez](https://ime.unicamp.br/~martinez), [Claudia Sagastizábal](https://ime.unicamp.br/~sagastiz) and [Paulo J. S. Silva](https://ime.unicamp.br/~pjssilva). -->
 
 My research interests include _analysis and implementation of convex and nonconvex optimization algorithms_, _algorithms for data science and machine learning_, and _numerical linear algebra_. 
 
@@ -78,14 +79,7 @@ My research interests include _analysis and implementation of convex and nonconv
 \sectionheading{"Experience", class="col-12 col-lg-4"}
 
 @@col-12,col-lg-8
-\experience{
-  title="FAPESP Visiting Researcher at IMECC",
-  company="Universidade Estadual de Campinas",
-  from="Ago 2023",
-  to="Present",
-  location="Campinas, SP, BR",
-  active=true
-  }
+
 \experience{
   title="Professor of Applied Mathematics and Optimization",
   company="Universidade Federal de Santa Catarina",
@@ -93,6 +87,14 @@ My research interests include _analysis and implementation of convex and nonconv
   to="Present",
   location="Blumenau, SC, BR",
   active=true
+  }
+  \experience{
+  title="FAPESP Visiting Researcher at IMECC",
+  company="Universidade Estadual de Campinas",
+  from="Ago 2023",
+  to="Jan 2024",
+  location="Campinas, SP, BR",
+  active=false
   }
   \experience{
   title="Visiting Assistant Professor of Management Sciences and Engineering",
