@@ -29,7 +29,7 @@
 <!-- RIGHT COLUMN -->
 @@col-12,col-lg-8
 
-\begin{biography}{resume="https://drive.google.com/file/d/1MaOvBi_vE436K8LYqYpvfq-HIVEs-WNx/view?usp=sharing", lattes="http://lattes.cnpq.br/8148144650071227"}
+\begin{biography}{resume="https://drive.google.com/file/d/1wd5SDNP1nz5j_dvosHJU_fdf1bcjKyw7/view?usp=sharing", lattes="http://lattes.cnpq.br/8148144650071227"}
 I am **Professor of Applied Mathematics and Optimization** at [Departamento de Matemática](https://mat.blumenau.ufsc.br) of [Federal University of Santa Catarina - UFSC](https://ufsc.br), located in [Blumenau](https://blumenau.ufsc.br), SC, Brazil. I am also a member of the [Laboratory of Computational and Applied Mathematics — LABMAC](http://labmac.mat.blumenau.ufsc.br), where open-source solvers and algorithms in applied mathematics are developed. 
 
 <!-- 
