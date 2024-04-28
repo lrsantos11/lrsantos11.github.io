@@ -30,7 +30,7 @@
 @@col-12,col-lg-8
 
 \begin{biography}{resume="https://drive.google.com/file/d/1wd5SDNP1nz5j_dvosHJU_fdf1bcjKyw7/view?usp=sharing", lattes="http://lattes.cnpq.br/8148144650071227"}
-I am **Professor of Applied Mathematics and Optimization** at [Departamento de Matemática](https://mat.blumenau.ufsc.br) of [Federal University of Santa Catarina - UFSC](https://ufsc.br), located in [Blumenau](https://blumenau.ufsc.br), SC, Brazil. I am also a member of the [Laboratory of Computational and Applied Mathematics — LABMAC](http://labmac.mat.blumenau.ufsc.br), where open-source solvers and algorithms in applied mathematics are developed. 
+I am **Professor of Applied Mathematics and Optimization** at [Departamento de Matemática](https://mat.blumenau.ufsc.br) of [Federal University of Santa Catarina - UFSC](https://ufsc.br), located in [Blumenau](https://blumenau.ufsc.br), SC, Brazil. I was a visiting professor at Stanford University (2023), IMECC/Unicamp (2023-2024). I am also a member of the [Laboratory of Computational and Applied Mathematics — LABMAC](http://labmac.mat.blumenau.ufsc.br), where open-source solvers and algorithms in applied mathematics are developed. 
 
 <!-- 
 In 2023, I am on a Sabbatical Research Leave. 
@@ -145,9 +145,9 @@ My research interests include _analysis and implementation of convex and nonconv
 @@col-8,col-lg12
 
 
-## Papers on the pipeline
+### Works on the pipeline
 {{pub "ref_pipeline"}}
-## Peer reviewed articles on academic journals
+### Peer reviewed articles on academic journals
 {{pub "ref_articles"}}
 
 ### Peer reviewed proceedings and book chapters

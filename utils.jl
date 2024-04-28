@@ -13,7 +13,7 @@ using Dates
             </div>
           </div>
         </section>""")
-end
+end 
  
 @lx function sectionheading(title; class="")
     return html("""
@@ -321,4 +321,4 @@ function hfun_pub(type_bib)
         String(take!(io)) 
 end
 
-today_for_page = Dates.format(today(),"u, dd YYYY")
+today_for_page = Dates.format(today(),"u, dd YYYY") 
