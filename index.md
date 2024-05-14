@@ -18,7 +18,7 @@
   link="https://mat.blumenau.ufsc.br/",
   linkname="Universidade Federal de Santa Catarina",
   twitter="https://twitter.com/lrsantos11",
-  gscholar="https://scholar.google.com/citations?user=lrsantos11",
+  gscholar="https://scholar.google.com/citations?user=LvSioAIAAAAJ",
   github="https://github.com/lrsantos11",
   linkedin="https://www.linkedin.com/in/lrsantos11", 
   lattes="http://lattes.cnpq.br/8148144650071227",
