@@ -34,6 +34,9 @@ jobs:
       uses: julia-actions/setup-julia@v1
       with:
         version: 1.12
+    - name: Check Julia version
+      run: julia --version
+
     - run: julia -e '
             using Pkg; Pkg.add(["NodeJS", "FranklinUtils"]);
             Pkg.add(Pkg.PackageSpec(name="Franklin", rev="master"));
