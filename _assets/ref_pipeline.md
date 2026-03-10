@@ -1,7 +1,9 @@
 ---
 nocite: |
-    @Behling:2024a,
+    @behlingBasisPursuitInconsistent2025,
     @Villas-Boas:2023,
-    @Chu:2024,
-    @Filippozzi:2024,
+    @barrosParallelizingCircumcenteredReflectionMethod2025,
+    @behlingCircumcenteredDirectMethods2026,
+    @behlingFejerMonotonicityOptimization2024,
+    @pamplonaConstructingMagicSquares2025,
 ...

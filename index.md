@@ -30,7 +30,7 @@
 @@col-12,col-lg-8
 
 \begin{biography}{resume="https://drive.google.com/file/d/1wd5SDNP1nz5j_dvosHJU_fdf1bcjKyw7/view?usp=sharing", lattes="http://lattes.cnpq.br/8148144650071227"}
-I am **Professor of Applied Mathematics and Optimization** at [Departamento de Matemática](https://mat.blumenau.ufsc.br) of [Federal University of Santa Catarina - UFSC](https://ufsc.br), located in [Blumenau](https://blumenau.ufsc.br), SC, Brazil. I was a visiting professor at Stanford University (2023), IMECC/Unicamp (2023-2024). I am also a member of the [Laboratory of Computational and Applied Mathematics — LABMAC](http://labmac.mat.blumenau.ufsc.br), where open-source solvers and algorithms in applied mathematics are developed. 
+I am **Professor of Applied Mathematics and Optimization** at [Departamento de Matemática](https://mat.blumenau.ufsc.br) of [Federal University of Santa Catarina - UFSC](https://ufsc.br), located in [Blumenau](https://blumenau.ufsc.br), SC, Brazil. Currently, I serve as the **Vice-President of the [Brazilian Society of Computational and Applied Mathematics (SBMAC)](https://www.sbmac.org.br)**. I was a visiting professor at Stanford University (2023), IMECC/Unicamp (2023-2024). I am also a member of the [Laboratory of Computational and Applied Mathematics — LABMAC](http://labmac.mat.blumenau.ufsc.br), where open-source solvers and algorithms in applied mathematics are developed. 
 
 <!-- 
 In 2023, I am on a Sabbatical Research Leave. 
@@ -79,14 +79,22 @@ My research interests include _analysis and implementation of convex and nonconv
 \sectionheading{"Experience", class="col-12 col-lg-4"}
 
 @@col-12,col-lg-8
-
 \experience{
-  title="Professor of Applied Mathematics and Optimization",
+  title="Associate Professor of Applied Mathematics and Optimization",
   company="Universidade Federal de Santa Catarina",
-  from="Sep 2014",
+  from="Sep 2025",
   to="Present",
   location="Blumenau, SC, BR",
   active=true
+  }
+
+\experience{
+  title="Assistant Professor of Applied Mathematics and Optimization",
+  company="Universidade Federal de Santa Catarina",
+  from="Sep 2014",
+  to="Sep 2025",
+  location="Blumenau, SC, BR",
+  active=false
   }
   \experience{
   title="FAPESP Visiting Researcher at IMECC",
