@@ -28,12 +28,12 @@ jobs:
     - name: Setup pandoc
       uses: r-lib/actions/setup-pandoc@v2
       with:
-        pandoc-version: '2.19' # The pandoc version to download (if necessary) and use.
+        pandoc-version: '3.9' # The pandoc version to download (if necessary) and use.
     - run: echo "# Test" | pandoc -t html
     - name: Install Julia
       uses: julia-actions/setup-julia@v1
       with:
-        version: 1.8
+        version: 1.12
     - run: julia -e '
             using Pkg; Pkg.add(["NodeJS", "FranklinUtils"]);
             Pkg.add(Pkg.PackageSpec(name="Franklin", rev="master"));
