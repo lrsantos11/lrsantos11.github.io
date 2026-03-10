@@ -461,24 +461,27 @@
   keywords     = {lrs}
 }
 
-@onlinw{Chu:2024,
-  title         = {Randomized {{Nystr{\"o}m Preconditioned Interior Point-Proximal Method}} of {{Multipliers}}},
+@article{chuRandomizedNystromPreconditioned2026,
+  title         = {Randomized {{Nystr\"om Preconditioned Interior Point-Proximal Method}} of {{Multipliers}}},
   author        = {Chu, Ya-Chi and Santos, Luiz-Rafael and Udell, Madeleine},
-  year          = {2024},
-  month         = apr,
-  number        = {arXiv:2404.14524},
+  year          = 2026,
+  month         = feb,
+  journal       = {SIAM Journal on Scientific Computing},
+  volume        = {48},
+  number        = {1},
   eprint        = {2404.14524},
   primaryclass  = {math},
-  publisher     = {arXiv},
-  doi           = {10.48550/arXiv.2404.14524},
-  urldate       = {2024-04-25},
-  pubstate      = {preprint},
-  abstract      = {We present a new algorithm for convex separable quadratic programming (QP) called Nys-IP-PMM, a regularized interior-point solver that uses low-rank structure to accelerate solution of the Newton system. The algorithm combines the interior point proximal method of multipliers (IP-PMM) with the randomized Nystr{\textbackslash}"om preconditioned conjugate gradient method as the inner linear system solver. Our algorithm is matrix-free: it accesses the input matrices solely through matrix-vector products, as opposed to methods involving matrix factorization. It works particularly well for separable QP instances with dense constraint matrices. We establish convergence of Nys-IP-PMM. Numerical experiments demonstrate its superior performance in terms of wallclock time compared to previous matrix-free IPM-based approaches.},
-  archiveprefix = {arxiv},
-  copyright     = {All rights reserved},
+  pages         = {A132-A159},
+  issn          = {1064-8275, 1095-7197},
+  doi           = {10.1137/24M1654968},
+  urldate       = {2026-01-06},
+  archiveprefix = {arXiv},
+  langid        = {english},
   keywords      = {90C06 90C20 90C51 65F08,Mathematics - Optimization and Control},
-  file          = {/Users/lrsantos/Zotero/storage/8CERT6K4/Chu et al. - 2024 - Randomized Nystrom Preconditioned Interior Point.pdf;/Users/lrsantos/Zotero/storage/I26QCG9Q/2404.html}
+  file          = {/Users/lrsantos/Zotero/storage/6X6W3A2D/Chu et al. - 2026 - Randomized Nyström Preconditioned Interior Point-Proximal Method of Multipliers.pdf;/Users/lrsantos/Zotero/storage/EKR44R5I/m165496_supplementary_materials.pdf}
 }
+
+
 
 
 
@@ -502,15 +505,7 @@
 }
 
 
-@unpublished{Behling:2024a,
-  type      = {In Progress},
-  title     = {Basis Pursuit by Inconsistent Alternating Projections},
-  author    = {Behling, Roger and {Bello-Cruz}, Yunier and Santos, Luiz-Rafael and Silva, Paulo J. S.},
-  year      = {2024},
-  copyright = {All rights reserved},
-  keywords  = {lrs, pipeline},
 
-}
 
 @unpublished{Filippozzi:2024,
   type      = {In Progress},
@@ -521,4 +516,98 @@
   copyright = {All rights reserved},
   keywords  = {lrs}
 }
+
+@misc{barrosParallelizingCircumcenteredReflectionMethod2025,
+type = {In Progress},
+  title         = {Parallelizing the {{Circumcentered-Reflection Method}}},
+  author        = {Barros, Pablo and Behling, Roger and Guigues, Vincent and Santos, Luiz-Rafael},
+  year          = 2025,
+  month         = may,
+  number        = {arXiv:2505.17258},
+  eprint        = {2505.17258},
+  primaryclass  = {math},
+  publisher     = {arXiv},
+  doi           = {10.48550/arXiv.2505.17258},
+  urldate       = {2025-05-26},
+  abstract      = {This paper introduces the Parallelized Circumcentered Reflection Method (P-CRM), a circumcentric approach that parallelizes the Circumcentered Reflection Method (CRM) for solving Convex Feasibility Problems in affine settings. Beyond feasibility, P-CRM solves the best approximation problem for any finite collection of affine subspaces; that is, it not only finds a feasible point but directly computes the projection of an initial point onto the intersection. Within a fully self-contained scheme, we also introduce the Framework for the Simultaneous Projection Method (F-SPM) which includes Cimmino's method as a special case. Theoretical results show that both P-CRM and F-SPM achieve linear convergence. Moreover, P-CRM converges at a rate that is at least as fast as, and potentially superior to, the best convergence rate of F-SPM. As a byproduct, this also yields a new and simplified convergence proof for Cimmino's method. Numerical experiments show that P-CRM is competitive compared to CRM and indicate that it offers a scalable and flexible alternative, particularly suited for large-scale problems and modern computing environments.},
+  archiveprefix = {arXiv},
+  copyright     = {All rights reserved},
+  pubstate      = {preprint},
+  keywords      = {lrs, pipeline},
+  file          = {/Users/lrsantos/Zotero/storage/XB6SK6GF/Barros et al. - 2025 - Parallelizing the Circumcentered-Reflection Method.pdf;/Users/lrsantos/Zotero/storage/QA92LKEL/2505.html}
+}
+
+@misc{behlingBasisPursuitInconsistent2025,
+  title         = {Basis Pursuit by Inconsistent Alternating Projections},
+  author        = {Behling, Roger and {Bello-Cruz}, Yunier and Santos, Luiz-Rafael and Silva, Paulo J. S.},
+  year          = 2025,
+  month         = aug,
+  number        = {arXiv:2508.15026},
+  eprint        = {2508.15026},
+  primaryclass  = {math},
+  publisher     = {arXiv},
+  doi           = {10.48550/arXiv.2508.15026},
+  urldate       = {2025-10-08},
+  abstract      = {Basis pursuit is the problem of finding a vector with smallest \$\textbackslash ell\_1\$-norm among the solutions of a given linear system of equations. It is a famous convex relaxation of what the literature refers to as sparse affine feasibility problem, in which sparse solutions to underdetermined systems are sought. In addition to enjoying convexity, the basis pursuit can be trivially rewritten as a linear program, and thus standard tools in linear programming apply for solving it. In turn, we tackle the basis pursuit in its very original shape with a scheme that uses alternating projections in its subproblems. These subproblems are designed to be inconsistent in the sense that they relate to two non-intersecting sets. Quite recently, inconsistency coming from infeasibility has been seen to work in favor of alternating projections and correspondent convergence rates. In our work, this feature is now suitably enforced in a new and numerically competitive method for solving the basis pursuit.},
+  archiveprefix = {arXiv},
+  pubstate      = {preprint},
+  keywords      = {lrs, pipeline},
+  file          = {/Users/lrsantos/Zotero/storage/3LZPS7VF/Behling et al. - 2025 - Basis pursuit by inconsistent alternating projections.pdf;/Users/lrsantos/Zotero/storage/ZXZWEAIX/2508.html}
+}
+
+@misc{behlingCircumcenteredDirectMethods2026,
+  title         = {On Circumcentered Direct Methods for Monotone Variational Inequality Problems},
+  author        = {Behling, Roger and {Bello-Cruz}, Yunier and Iusem, Alfredo and Liu, Di and Santos, Luiz-Rafael},
+  year          = 2026,
+  month         = feb,
+  number        = {arXiv:2506.17814},
+  eprint        = {2506.17814},
+  primaryclass  = {math},
+  publisher     = {arXiv},
+  doi           = {10.48550/arXiv.2506.17814},
+  urldate       = {2026-02-11},
+  abstract      = {Circumcentered techniques have been shown to significantly accelerate projection-based methods for convex feasibility problems. Motivated by this success, we propose two direct methods with circumcenter acceleration for solving variational inequality problems involving two classes of operators: paramonotone and monotone. Both schemes rely on approximate projections onto separating halfspaces, thereby avoiding computationally expensive exact projections. We establish convergence results for both methods and conduct numerical experiments, demonstrating that the proposed algorithms outperform classical methods, such as the extragradient algorithm, by orders of magnitude in terms of computational time, particularly when the feasible set is a complex intersection of convex sets.},
+  archiveprefix = {arXiv},
+  keywords      = {Mathematics - Optimization and Control},
+  file          = {/Users/lrsantos/Zotero/storage/CU4PFDH8/Behling et al. - 2026 - On circumcentered direct methods for monotone variational inequality problems.pdf;/Users/lrsantos/Zotero/storage/7NK9LSBR/2506.html}
+}
+
+@misc{behlingFejerMonotonicityOptimization2024,
+  title         = {Fej\'er* Monotonicity in Optimization Algorithms},
+  author        = {Behling, Roger and {Bello-Cruz}, Yunier and Iusem, Alfredo Noel and Ribeiro, Ademir Alves and Santos, Luiz-Rafael},
+  year          = 2024,
+  month         = oct,
+  number        = {arXiv:2410.08331},
+  eprint        = {2410.08331},
+  publisher     = {arXiv},
+  doi           = {10.48550/arXiv.2410.08331},
+  urldate       = {2024-10-14},
+  abstract      = {Fej\textbackslash 'er monotonicity is a well-established property commonly observed in sequences generated by optimization algorithms. In this paper, we introduce an extension of this property, called Fej\textbackslash 'er* monotonicity, which was initially proposed in [SIAM J. Optim., 34(3), 2535-2556 (2024)]. We discuss and build upon the concept by exploring its behavior within Hilbert spaces, presenting an illustrative example and insightful results regarding weak and strong convergence. We also compare Fej\textbackslash 'er* monotonicity with other weak notions of Fej\textbackslash 'er-like monotonicity, to better establish the role of Fej\textbackslash 'er* monotonicity in optimization algorithms.},
+  archiveprefix = {arXiv},
+  copyright     = {All rights reserved},
+  pubstate      = {preprint},
+  keywords      = {lrs, pipeline},
+  file          = {/Users/lrsantos/Zotero/storage/24BNJ8A9/Behling et al. - 2024 - Fejér monotonicity in optimization algorithms.pdf}
+}
+
+@misc{pamplonaConstructingMagicSquares2025,
+  title         = {Constructing {{Magic Squares}}: An Integer Linear Programming Model and a Fast Heuristic},
+  shorttitle    = {Constructing {{Magic Squares}}},
+  author        = {Pamplona, Jo{\~a}o Vitor and Pinheiro, Maria Eduarda and Santos, Luiz-Rafael},
+  year          = 2025,
+  month         = may,
+  number        = {arXiv:2504.20017},
+  eprint        = {2504.20017},
+  primaryclass  = {math},
+  publisher     = {arXiv},
+  doi           = {10.48550/arXiv.2504.20017},
+  urldate       = {2025-05-20},
+  abstract      = {Magic squares are a fascinating mathematical challenge that has intrigued mathematicians for centuries. Given a positive (and possibly large) integer \$n\$, one of the main challenges that still remains is to find, within a reliable computational time, a magic square of order \$n\$, that is, a square matrix of order \$n\$ with unique integers from \$a\_\textbraceleft\textbackslash min\textbraceright\$ to \$a\_\textbraceleft\textbackslash max\textbraceright\$, such that the sum of each row, column, and diagonal equals a constant \$\textbackslash mathcal\textbraceleft C\textbraceright (A)\$. In this work, we first present an Integer Linear Programming (ILP) model for constructing a magic square of order \$n\$, which is formulated as a feasibility problem. Nonetheless, the solution time of this ILP model grows exponentially as the order increases. To overcome this limitation, we also propose a heuristic that constructs magic squares depending on whether \$n\$ is odd, singly even, or doubly even. Our numerical results show that the proposed heuristic can construct magic squares of order up to \$70000\$ in less than \$140\$ seconds, demonstrating its efficiency and scalability.},
+  archiveprefix = {arXiv},
+  copyright     = {All rights reserved},
+  pubstate      = {preprint},
+  keywords      = {lrs, pipeline},
+  file          = {/Users/lrsantos/Zotero/storage/3JT97NQM/Pamplona et al. - 2025 - Constructing Magic Squares an integer linear programming model and a fast heuristic.pdf;/Users/lrsantos/Zotero/storage/73BXC5D8/2504.html}
+}
+
 
