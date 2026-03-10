@@ -192,6 +192,22 @@ end
           </div>
         """)
 end
+@lx function fellowship(; title="", level="", from="", to="")
+    parts = [title]
+    !isempty(level) && push!(parts, "level $level")
+    if !isempty(from)
+        to_str = isempty(to) ? "Present" : to
+        push!(parts, "$from&ndash;$to_str")
+    end
+
+    text = join(parts, ", ")
+    # Using fa-li and fa-trophy for a bullet point with an icon
+    # The parent <ul> should have the class "fa-ul"
+    return html("""<li> $text</li>""")
+end
+
+
+
 
 # -------------------- #
 # List of recent posts #

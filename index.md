@@ -125,9 +125,21 @@ My research interests include _analysis and implementation of convex and nonconv
 \end{section}
 
 
-<!-- --------------------
-     RECENT POSTS SECTION
-     -------------------- -->
+<!-- ------------------
+     EXPERIENCE SECTION
+     ------------------ -->
+
+\begin{section}{name="Fellowships"}
+
+\sectionheading{"Fellowships", class="col-12 col-lg-4"}
+
+@@col-12,col-lg-8
+\fellowship{title="CNPq Research Fellowship", level="1D", from="2023", to="Present"}
+
+\fellowship{title="FAPESP Visiting Researcher", from="2023", to="2024"}
+@@
+
+\end{section}
 
 
 
