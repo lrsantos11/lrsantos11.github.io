@@ -18,4 +18,5 @@ nocite: |
     @Santos:2009,
     @Santos:2019,
     @Siqueira:2016,
+    @pamplonaConstructingMagicSquares2025,
 ...
