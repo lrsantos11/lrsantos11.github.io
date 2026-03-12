@@ -5,5 +5,5 @@ nocite: |
     @barrosParallelizingCircumcenteredReflectionMethod2025,
     @behlingCircumcenteredDirectMethods2026,
     @behlingFejerMonotonicityOptimization2024,
-    @pamplonaConstructingMagicSquares2025,
+    
 ...
