@@ -1,5 +1,9 @@
 ---
 nocite: |
-    @Behling:2021, 
-    @Behling:2022
+    @behlingBasisPursuitInconsistent2025,
+    @Villas-Boas:2023,
+    @barrosParallelizingCircumcenteredReflectionMethod2025,
+    @behlingCircumcenteredDirectMethods2026,
+    @behlingFejerMonotonicityOptimization2024,
+    
 ...

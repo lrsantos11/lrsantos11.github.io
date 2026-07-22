@@ -1,4 +1,5 @@
 using FranklinUtils
+using Dates
 # ----------------------------------- #
 # Academic blocks // General elements #
 # ----------------------------------- #
@@ -12,7 +13,7 @@ using FranklinUtils
             </div>
           </div>
         </section>""")
-end
+end 
  
 @lx function sectionheading(title; class="")
     return html("""
@@ -60,9 +61,9 @@ end
     io = IOBuffer()
     write(io, html("""<h1>Biography</h1>""") * md)
     isempty(resume) || write(io, html("""
-        </br><p><i class="fas fa-download pr-1 fa-fw"></i>Download my <a href="$resume" target=_blank>resumé</a> (in English).</p>"""))
+        </br><p><i class="fas fa-download pr-1 fa-fw"></i><a href="$resume" target=_blank>Resumé</a> (in English).</p>"""))
       isempty(lattes) || write(io, html("""
-        <p><i class="ai ai-lattes pr-1 fa-fw"></i><a href="$lattes" target=_blank>Check here</a> my CV Lattes (in Portuguese).</p>"""))
+        <p><i class="ai ai-lattes pr-1 fa-fw"></i><a href="$lattes" target=_blank>CV Lattes</a> (in Portuguese).</p>"""))
     return String(take!(io))
 end
 
@@ -191,6 +192,22 @@ end
           </div>
         """)
 end
+@lx function fellowship(; title="", level="", from="", to="")
+    parts = [title]
+    !isempty(level) && push!(parts, "level $level")
+    if !isempty(from)
+        to_str = isempty(to) ? "Present" : to
+        push!(parts, "$from&ndash;$to_str")
+    end
+
+    text = join(parts, ", ")
+    # Using fa-li and fa-trophy for a bullet point with an icon
+    # The parent <ul> should have the class "fa-ul"
+    return html("""<li> $text</li>""")
+end
+
+
+
 
 # -------------------- #
 # List of recent posts #
@@ -310,12 +327,14 @@ end
 
 function hfun_pub(type_bib)
   io = IOBuffer()
-  bib_html = read(`pandoc --citeproc  --csl=_assets/apa-numeric-superscript.csl --bibliography=_assets/my_refs.bib   --mathjax -f markdown+yaml_metadata_block+citations+raw_html  _assets/$(type_bib).md`, String)
+  bib_html = read(`pandoc --citeproc  --csl=_assets/apa-cv.csl --bibliography=_assets/my_refs.bib   --mathjax -f markdown+yaml_metadata_block+citations+raw_html  _assets/$(type_bib).md`, String)
   write(io, """
-          <font size="2">
+          <font size="3">
           $(bib_html)
           </font>
           """
-          )  
+          )
         String(take!(io)) 
 end
+
+today_for_page = Dates.format(today(),"u, dd YYYY") 

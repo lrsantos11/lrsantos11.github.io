@@ -4,7 +4,7 @@
 
 ### Papers on the pipeline
 {{pub "ref_pipeline"}}
-### Peer reviewed journal articles
+### Peer reviewed articles on academic journals
 {{pub "ref_articles"}}
 
 ### Peer reviewed proceedings and book chapters

@@ -1,4 +1,4 @@
-@def title = "Academic page of LRS"
+@def title = "Academic page of Prof. L.-R. Santos"
 
 
 
@@ -11,14 +11,14 @@
 <!-- LEFT COLUMN -->
 @@col-12,col-lg-4,profile
 
-\img{"/assets/img/2020_05_06_EU.jpeg", class="avatar avatar-circle", alt="Luiz-Rafael Santos"}
+\img{"/assets/img/Foto_perfil_LRS.jpg", class="avatar avatar-circle", alt="Luiz-Rafael Santos"}
 \portrait{
   name="Luiz-Rafael Santos",
-  job="Professor of Applied Mathematics and Optimization",
+  job="Associate Professor of Applied Mathematics and Optimization",
   link="https://mat.blumenau.ufsc.br/",
   linkname="Universidade Federal de Santa Catarina",
   twitter="https://twitter.com/lrsantos11",
-  gscholar="https://scholar.google.com/citations?user=lrsantos11",
+  gscholar="https://scholar.google.com/citations?user=LvSioAIAAAAJ",
   github="https://github.com/lrsantos11",
   linkedin="https://www.linkedin.com/in/lrsantos11", 
   lattes="http://lattes.cnpq.br/8148144650071227",
@@ -29,18 +29,27 @@
 <!-- RIGHT COLUMN -->
 @@col-12,col-lg-8
 
-\begin{biography}{resume="https://drive.google.com/file/d/1MaOvBi_vE436K8LYqYpvfq-HIVEs-WNx/view?usp=sharing", lattes="http://lattes.cnpq.br/8148144650071227"}
-I'm Professor of Applied Mathematics and Optimization, at [Departmento de Matemática](https://mat.blumenau.ufsc.br) of [UFSC — Federal University of Santa Catarina](https://ufsc.br) — [Campus Blumenau](https://blumenau.ufsc.br). My research interests include analysis and implementation of continous optimization algorithms, convex optimization, algorithms for data science and machine learning and numerical analysis. I'm also  the [Laboratory of Applied Mathematics — LABMAC](http://labmac.mat.blumenau.ufsc.br), which develops open-source research solvers and algorithms in applied mathematics.
+\begin{biography}{resume="https://drive.google.com/file/d/1wd5SDNP1nz5j_dvosHJU_fdf1bcjKyw7/view?usp=sharing", lattes="http://lattes.cnpq.br/8148144650071227"}
+I am **Professor of Applied Mathematics and Optimization** at [Departamento de Matemática](https://mat.blumenau.ufsc.br) of [Federal University of Santa Catarina - UFSC](https://ufsc.br), located in [Blumenau](https://blumenau.ufsc.br), SC, Brazil. Currently, I serve as **Vice-President** of the [Brazilian Society of Computational and Applied Mathematics (SBMAC)](https://www.sbmac.org.br). I was a visiting professor at  [Management Sciences and Engineering Department](https://msande.stanford.edu) in [Stanford University](https://stanford.edu) (2023), and at [Departamento de Matemática Aplicada](https://www.ime.unicamp.br/pos-graduacao/matematica-aplicada) in [IMECC](https://ime.unicamp.br)/[Unicamp](https://unicamp.br) (2023-2024). I am also a member of the [Laboratory of Computational and Applied Mathematics — LABMAC](http://labmac.mat.blumenau.ufsc.br), where open-source solvers and algorithms in applied mathematics are developed. 
 
-In the first semester of 2023 I'm as a Visiting Assistant Professor at Department of [Managment Sciences and Engineering](https://msande.stanford.edu) of [Stanford University](https://stanford.edu). 
+<!-- 
+In 2023, I am on a Sabbatical Research Leave. 
+
+ - In the first semester, I was appointed **Visiting Assistant Professor** of [Management Sciences and Engineering](https://msande.stanford.edu) at [Stanford University](https://stanford.edu), where I was hosted by [Madeleine Udell](https://web.stanford.edu/~udell). 
+
+ - During the second semester, I was granted with the **[FAPESP Visiting Researcher Award](https://fapesp.br/index.php/en/visiting)** to be a Visiting Professor at [IMECC](https://ime.unicamp.br)/[Universidade Estadual de Campinas — Unicamp](https://unicamp.br), to work with [Mario Martinez](https://ime.unicamp.br/~martinez), [Claudia Sagastizábal](https://ime.unicamp.br/~sagastiz) and [Paulo J. S. Silva](https://ime.unicamp.br/~pjssilva). -->
+
+My research interests include _analysis and implementation of convex and nonconvex optimization algorithms_, _algorithms for data science and machine learning_, and _numerical linear algebra_. 
+
+
 \end{biography}
 
 \shortcv{
   interests=["Optimization", "Machine Learning Algorithms", "Operations Research", "Numerical Linear Algebra"],
   education=[
-    ("PhD in Applied Mathematics, 2014", "Unicamp"),
-    ("MSc in Applied Mathematics, 2008", "Unicamp"),
-    ("BSc in Mathematics, 2014", "FURB")]
+    ("PhD in Applied Mathematics, 2014", "Unicamp, Brazil"),
+    ("MSc in Applied Mathematics, 2008", "Unicamp, Brazil"),
+    ("BSc in Mathematics, 2004", "FURB, Brazil")]
 }
 
 @@ <!-- end of column -->
@@ -50,15 +59,15 @@ In the first semester of 2023 I'm as a Visiting Assistant Professor at Departmen
      SKILLS SECTION
      -------------- -->
 
-<!-- \begin{section}{name="skills", class="wg-featurette", rowclass="featurette"} -->
+<!-- \begin{section}{name="skills", class="wg-featurette", rowclass="featurette"}
 
-<!-- \sectionheading{"Skills", class="col-md-12"} -->
+\sectionheading{"Skills", class="col-md-12"}
 
-<!-- \skill{"Julia", "90%", img="/assets/img/julia-dots.svg"} -->
-<!-- \skill{"Machine Learning", "100%", fa="chart-line"} -->
-<!-- \skill{"Photography", "10%", fa="camera-retro"} -->
+\skill{"Julia", "100%", img="/assets/img/julia-dots.svg"}
+\skill{"Optimization", "100%", fa="chart-line"}
+\skill{"Photography", "10%", fa="camera-retro"} 
 
-<!-- \end{section} -->
+\end{section} -->
 
 
 <!-- ------------------
@@ -71,20 +80,37 @@ In the first semester of 2023 I'm as a Visiting Assistant Professor at Departmen
 
 @@col-12,col-lg-8
 \experience{
-  title="Visiting Assistant Professor",
-  company="Stanford University",
-  from="Jan 2023",
+  title="Associate Professor of Applied Mathematics and Optimization",
+  company="Universidade Federal de Santa Catarina",
+  from="Sep 2025",
   to="Present",
-  location="Stanford, CA, US",
+  location="Blumenau, SC, BR",
   active=true
   }
+
 \experience{
-  title="Professor of Applied Mathematics and Optimization",
+  title="Assistant Professor of Applied Mathematics and Optimization",
   company="Universidade Federal de Santa Catarina",
   from="Sep 2014",
-  to="Present",
-  location="Blumenau, SC, Brasil",
-  active=true
+  to="Sep 2025",
+  location="Blumenau, SC, BR",
+  active=false
+  }
+  \experience{
+  title="FAPESP Visiting Researcher at IMECC",
+  company="Universidade Estadual de Campinas",
+  from="Ago 2023",
+  to="Jan 2024",
+  location="Campinas, SP, BR",
+  active=false
+  }
+  \experience{
+  title="Visiting Assistant Professor of Management Sciences and Engineering",
+  company="Stanford University",
+  from="Jan 2023",
+  to="Jul 2023",
+  location="Stanford, CA, US",
+  active=false
   }
   \experience{
   title="PhD Candidate in Applied Mathematics",
@@ -99,9 +125,21 @@ In the first semester of 2023 I'm as a Visiting Assistant Professor at Departmen
 \end{section}
 
 
-<!-- --------------------
-     RECENT POSTS SECTION
-     -------------------- -->
+<!-- ------------------
+     EXPERIENCE SECTION
+     ------------------ -->
+
+\begin{section}{name="Fellowships"}
+
+\sectionheading{"Fellowships", class="col-12 col-lg-4"}
+
+@@col-12,col-lg-8
+\fellowship{title="CNPq Research Fellowship", level="1D", from="2023", to="Present"}
+
+\fellowship{title="FAPESP Visiting Researcher", from="2023", to="2024"}
+@@
+
+\end{section}
 
 
 
@@ -120,3 +158,24 @@ In the first semester of 2023 I'm as a Visiting Assistant Professor at Departmen
 <!-- ---------------------------
      RECENT PUBLICATIONS SECTION XXX
      --------------------------- -->
+\begin{section}{name="publications"}
+
+\sectionheading{"Publications", class="col-7 col-lg-4"}
+
+@@col-8,col-lg12
+
+
+### Works on the pipeline
+{{pub "ref_pipeline"}}
+### Peer reviewed articles on academic journals
+{{pub "ref_articles"}}
+
+### Peer reviewed proceedings and book chapters
+{{pub "ref_conf"}}
+
+### Dissertations
+{{pub "ref_theses"}}
+
+@@
+
+\end{section}
