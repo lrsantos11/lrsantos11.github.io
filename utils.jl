@@ -424,14 +424,13 @@ function hfun_talks()
     talks = all_talks()
     isempty(talks) && return ""
     io = IOBuffer()
-    write(io, """<div class="talks-list">""")
     curyear = year(talks[1].sortdate)
-    write(io, """<div class="col-12 col-lg-4"><h1>$curyear</h1></div><div class="col-12 col-lg-8">""")
+    write(io, """<div class="talks-list col-12 col-lg-4"><h1>$curyear</h1></div><div class="talks-list col-12 col-lg-8">""")
     for t in talks
         ty = year(t.sortdate)
         if ty < curyear
             curyear = ty
-            write(io, """</div><div class="col-12 col-lg-4"><h1>$curyear</h1></div><div class="col-12 col-lg-8">""")
+            write(io, """</div><div class="talks-list col-12 col-lg-4"><h1>$curyear</h1></div><div class="talks-list col-12 col-lg-8">""")
         end
         title = isnothing(t.title) ? "" : t.title
         heading = isempty(title) ? t.addendum : title
@@ -445,7 +444,7 @@ function hfun_talks()
               </div>
             </div>""")
     end
-    write(io, "</div></div>")
+    write(io, "</div>")
     return String(take!(io))
 end
 
