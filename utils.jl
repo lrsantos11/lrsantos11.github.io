@@ -372,13 +372,17 @@ function bibfield(body::AbstractString, field::AbstractString)
     start = m.offset + ncodeunits(m.match)
     depth = 1
     i = start
+    close_idx = start
     while i <= lastindex(body) && depth > 0
         c = body[i]
         c == '{' && (depth += 1)
-        c == '}' && (depth -= 1)
+        if c == '}'
+            depth -= 1
+            depth == 0 && (close_idx = i)
+        end
         i = nextind(body, i)
     end
-    return texfrag2unicode(strip(body[start:prevind(body, i)]))
+    return texfrag2unicode(strip(body[start:prevind(body, close_idx)]))
 end
 
 function talk_start_date(datestr::AbstractString)
