@@ -334,7 +334,118 @@ function hfun_pub(type_bib)
           </font>
           """
           )
-        String(take!(io)) 
+        String(take!(io))
 end
 
-today_for_page = Dates.format(today(),"u, dd YYYY") 
+# ----- #
+# Talks #
+# ----- #
+
+# talks.bib is hand-maintained LaTeX (shared with the CV), not parsed with a
+# citeproc pipeline: @misc entries fold event/venue/talk-type into "addendum"
+# (see the header comment in _assets/talks.bib), a field CSL/pandoc citeproc
+# doesn't know how to print, so we parse+render it directly instead of
+# reusing hfun_pub's pandoc --citeproc route.
+const TEX_ACCENTS = [
+    r"\\'a" => "á", r"\\'e" => "é", r"\\'i" => "í", r"\\'o" => "ó", r"\\'u" => "ú",
+    r"\\~a" => "ã", r"\\~o" => "õ", r"\\~n" => "ñ",
+    r"\\\^a" => "â", r"\\\^e" => "ê", r"\\\^o" => "ô", r"\\\^i" => "î", r"\\\^u" => "û",
+    r"\\`a" => "à",
+    r"\\\"a" => "ä", r"\\\"o" => "ö", r"\\\"u" => "ü",
+    r"\\c\{c\}" => "ç", r"\\c\{C\}" => "Ç",
+    r"\\textordmasculine\{\}" => "º",
+]
+
+function texfrag2unicode(s::AbstractString)
+    for (pat, rep) in TEX_ACCENTS
+        s = replace(s, pat => rep)
+    end
+    return s
+end
+
+# Extract a brace-delimited BibTeX field value, honoring nested braces
+# (e.g. accents like \c{c} inside the value) that a non-greedy regex would
+# truncate at.
+function bibfield(body::AbstractString, field::AbstractString)
+    m = match(Regex("(?:^|[,\\s])$field\\s*=\\s*\\{"), body)
+    isnothing(m) && return nothing
+    start = m.offset + ncodeunits(m.match)
+    depth = 1
+    i = start
+    close_idx = start
+    while i <= lastindex(body) && depth > 0
+        c = body[i]
+        c == '{' && (depth += 1)
+        if c == '}'
+            depth -= 1
+            depth == 0 && (close_idx = i)
+        end
+        i = nextind(body, i)
+    end
+    return texfrag2unicode(strip(body[start:prevind(body, close_idx)]))
+end
+
+function talk_start_date(datestr::AbstractString)
+    parts = split(split(datestr, "/")[1], "-")
+    length(parts) == 3 && return Date(parse(Int, parts[1]), parse(Int, parts[2]), parse(Int, parts[3]))
+    return Date(parse(Int, parts[1]), 1, 1)
+end
+
+function talk_date_display(datestr::AbstractString)
+    parts = split(datestr, "/")
+    length(parts) == 1 && !occursin("-", parts[1]) && return parts[1] # bare year
+    d1 = talk_start_date(parts[1])
+    length(parts) == 1 && return Dates.format(d1, "u d, Y")
+    d2 = talk_start_date(parts[2])
+    year(d1) == year(d2) && month(d1) == month(d2) &&
+        return "$(Dates.format(d1, "u d"))–$(day(d2)), $(year(d1))"
+    return "$(Dates.format(d1, "u d")) – $(Dates.format(d2, "u d, Y"))"
+end
+
+function all_talks()
+    bibtext = read(joinpath(Franklin.FOLDER_PATH[], "_assets", "talks.bib"), String)
+    talks = NamedTuple[]
+    for m in eachmatch(r"@misc\{[^,]+,(.*?)\n\}"s, bibtext)
+        body = m.captures[1]
+        date = bibfield(body, "date")
+        isnothing(date) && continue
+        push!(talks, (
+            title=bibfield(body, "title"),
+            location=bibfield(body, "location"),
+            date=date,
+            addendum=bibfield(body, "addendum"),
+            sortdate=talk_start_date(date),
+        ))
+    end
+    return sort(talks, by=t -> t.sortdate, rev=true)
+end
+
+function hfun_talks()
+    talks = all_talks()
+    isempty(talks) && return ""
+    io = IOBuffer()
+    curyear = year(talks[1].sortdate)
+    write(io, """<div class="talks-list col-12 col-lg-4"><h1>$curyear</h1></div><div class="talks-list col-12 col-lg-8">""")
+    for t in talks
+        ty = year(t.sortdate)
+        if ty < curyear
+            curyear = ty
+            write(io, """</div><div class="talks-list col-12 col-lg-4"><h1>$curyear</h1></div><div class="talks-list col-12 col-lg-8">""")
+        end
+        title = isnothing(t.title) ? "" : t.title
+        heading = isempty(title) ? t.addendum : title
+        secondary = isempty(title) ? "" : """<div class="article-metadata text-muted">$(t.addendum)</div>"""
+        write(io, """
+            <div class="media stream-item">
+              <div class=media-body>
+                <h3 class="article-title mb-0 mt-0">$heading</h3>
+                <div class="article-metadata">$(t.location) &middot; $(talk_date_display(t.date))</div>
+                $secondary
+              </div>
+            </div>""")
+    end
+    write(io, "</div>")
+    return String(take!(io))
+end
+
+today_for_page = Dates.format(today(),"u, dd YYYY")

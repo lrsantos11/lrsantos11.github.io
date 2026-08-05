@@ -7,7 +7,7 @@ nocite: |
     @Behling:2018a,
     @Behling:2020,
     @Behling:2021,
-    @Behling:2021b,
+    @Behling:2021a,
     @Behling:2023,
     @Behling:2024b,
     @Behling:2024,
@@ -19,6 +19,7 @@ nocite: |
     @Santos:2019,
     @Siqueira:2016,
     @pamplonaConstructingMagicSquares2025,
-    @LoucaoJr:2021, 
+    @LoucaoJr:2021,
+    @behlingFejerMonotonicityOptimization2024,
 
 ...
