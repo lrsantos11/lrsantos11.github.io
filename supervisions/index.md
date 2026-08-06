@@ -10,6 +10,8 @@
 
 ### M.Sc. students
 
+- **2026–now** — Martin Baraldi Lobe, Mathematics, UFSC, Blumenau, SC, Brazil
+- **2025–now** — Victor Afonso Schmitz, Mathematics, UFSC, Blumenau, SC, Brazil
 - **2024–2025** — Pedro Testoni Jr., Mathematics, UFSC, Florianópolis, SC, Brazil
 - **2024–now** — Taina da Silva, Mathematics, UFSC, Blumenau, SC, Brazil
 - **2020–2021** — Leonardo de Liz Brockveld, Mathematics, UFSC, Blumenau, SC, Brazil
