@@ -327,7 +327,7 @@ end
 
 function hfun_pub(type_bib)
   io = IOBuffer()
-  bib_html = read(`pandoc --citeproc  --csl=_assets/apa-cv.csl --bibliography=_assets/my_refs.bib   --mathjax -f markdown+yaml_metadata_block+citations+raw_html  _assets/$(type_bib).md`, String)
+  bib_html = read(`pandoc --citeproc  --csl=_assets/apa-cv.csl --bibliography=_assets/bib/my_refs.bib   --mathjax -f markdown+yaml_metadata_block+citations+raw_html  _assets/$(type_bib).md`, String)
   write(io, """
           <font size="3">
           $(bib_html)
@@ -343,7 +343,7 @@ end
 
 # talks.bib is hand-maintained LaTeX (shared with the CV), not parsed with a
 # citeproc pipeline: @misc entries fold event/venue/talk-type into "addendum"
-# (see the header comment in _assets/talks.bib), a field CSL/pandoc citeproc
+# (see the header comment in _assets/bib/talks.bib), a field CSL/pandoc citeproc
 # doesn't know how to print, so we parse+render it directly instead of
 # reusing hfun_pub's pandoc --citeproc route.
 const TEX_ACCENTS = [
@@ -403,7 +403,7 @@ function talk_date_display(datestr::AbstractString)
 end
 
 function all_talks()
-    bibtext = read(joinpath(Franklin.FOLDER_PATH[], "_assets", "talks.bib"), String)
+    bibtext = read(joinpath(Franklin.FOLDER_PATH[], "_assets", "bib", "talks.bib"), String)
     talks = NamedTuple[]
     for m in eachmatch(r"@misc\{[^,]+,(.*?)\n\}"s, bibtext)
         body = m.captures[1]
