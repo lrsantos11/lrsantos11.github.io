@@ -5,6 +5,5 @@ nocite: |
     @barrosParallelizingCircumcenteredReflectionMethod2025,
     @behlingCircumcenteredDirectMethods2026,
     @barrosNewOperatorDesigns2026,
-    @Sagastizabal:2024,
     
 ...
