@@ -21,5 +21,6 @@ nocite: |
     @pamplonaConstructingMagicSquares2025,
     @LoucaoJr:2021,
     @behlingFejerMonotonicityOptimization2024,
+    @barrosNewOperatorDesigns2026,
 
 ...
