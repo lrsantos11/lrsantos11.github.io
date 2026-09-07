@@ -4,5 +4,6 @@ nocite: |
     @Villas-Boas:2024,
     @barrosParallelizingCircumcenteredReflectionMethod2025,
     @behlingCircumcenteredDirectMethods2026,
+    @pinheiroSyntheticPopulationGeneration2026,
     
 ...
