@@ -29,7 +29,7 @@
 <!-- RIGHT COLUMN -->
 @@col-12,col-lg-8
 
-\begin{biography}{resume="https://drive.google.com/file/d/1wd5SDNP1nz5j_dvosHJU_fdf1bcjKyw7/view?usp=sharing", lattes="http://lattes.cnpq.br/8148144650071227"}
+\begin{biography}{resume="/assets/CV_LRS.pdf", lattes="http://lattes.cnpq.br/8148144650071227"}
 I am **Professor of Applied Mathematics and Optimization** at [Departamento de Matemática](https://mat.blumenau.ufsc.br) of [Federal University of Santa Catarina - UFSC](https://ufsc.br), located in [Blumenau](https://blumenau.ufsc.br), SC, Brazil. Currently, I serve as **Vice-President** of the [Brazilian Society of Computational and Applied Mathematics (SBMAC)](https://www.sbmac.org.br). I was a visiting professor at  [Management Sciences and Engineering Department](https://msande.stanford.edu) in [Stanford University](https://stanford.edu) (2023), and at [Departamento de Matemática Aplicada](https://www.ime.unicamp.br/pos-graduacao/matematica-aplicada) in [IMECC](https://ime.unicamp.br)/[Unicamp](https://unicamp.br) (2023-2024). I am also a member of the [Laboratory of Computational and Applied Mathematics — LABMAC](http://labmac.mat.blumenau.ufsc.br), where open-source solvers and algorithms in applied mathematics are developed. 
 
 <!-- 
